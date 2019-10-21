@@ -1,0 +1,26 @@
+{
+  "name": "rcmind",
+  "version": "1.0.2",
+  "description": "mindmap use pure React Hooks and Canvas",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeoooY/RCMind.git"
+  },
+  "keywords": [
+    "mindmap",
+    "react",
+    "hooks",
+    "canvas"
+  ],
+  "author": "LeoooY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeoooY/RCMind/issues"
+  },
+  "homepage": "https://github.com/LeoooY/RCMind#readme",
+  "private": false
+}
