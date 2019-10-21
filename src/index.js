@@ -1,5 +1,5 @@
-const RCMind=()=>{
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
 
-}
-
-export default RCMind
+ReactDOM.render(<App/>,document.getElementById("root"));
