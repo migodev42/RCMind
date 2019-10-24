@@ -1,5 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import Provider from '@context';
 
-ReactDOM.render(<App/>,document.getElementById("root"));
+
+function App(props) {
+    return (
+        <Provider>
+            <div>App</div>
+        </Provider>
+    )
+}
+
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;

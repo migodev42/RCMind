@@ -132,7 +132,7 @@ module.exports = function (webpackEnv) {
             extensions: ["*", ".js", ".jsx"],
             alias: {
                 "@src": path.resolve(__dirname, './src'),
-                "@pages": path.resolve(__dirname, './src/pages'),
+                "@pages": path.resolve(__dirname, './src/context'),
                 "@assets": path.resolve(__dirname, './src/assets'),
                 "@components": path.resolve(__dirname, './src/components'),
                 "@routers": path.resolve(__dirname, './src/routers')
