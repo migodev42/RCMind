@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react'
 
-// import exampleAReducer, {exampleAInitVal} from './reducer/exampleA';
+import themeReducer, {themeInitVal} from './reducer/theme';
 // import exampleBReducer, {exampleBInitVal} from './reducer/exampleB';
 
 
@@ -8,14 +8,14 @@ const context = React.createContext({});
 
 const WrappedProvider = props => {
 
-    // const [egAState, egADispatch] = useReducer(exampleAReducer, exampleAInitVal);
+    const [themeState, themeDispatch] = useReducer(themeReducer, themeInitVal);
     // const [egBState, egBDispatch] = useReducer(exampleBReducer, exampleBInitVal);
     
     const combined = {
-        // egA: {
-        //     state: egAState,
-        //     dispatch: egADispatch
-        // },        
+        theme: {
+            state: themeState,
+            dispatch: themeDispatch
+        },        
         // egB: {
         //     state: egBState,
         //     dispatch: egBDispatch

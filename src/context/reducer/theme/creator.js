@@ -1,6 +1,6 @@
 import * as actionTypes from './types';
 
-export const setBfColor=color=>({
+export const setBgColor=color=>({
     type: actionTypes.SET_BGCOLOR,
     data: {
         color,

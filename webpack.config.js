@@ -133,10 +133,16 @@ module.exports = function (webpackEnv) {
             alias: {
                 "@src": path.resolve(__dirname, './src'),
                 "@context": path.resolve(__dirname, './src/context'),
-                "@assets": path.resolve(__dirname, './src/assets'),
+                // "@assets": path.resolve(__dirname, './src/assets'),
                 "@components": path.resolve(__dirname, './src/components'),
-                "@routers": path.resolve(__dirname, './src/routers')
-            }
+                // "@routers": path.resolve(__dirname, './src/routers'),
+                "@containers": path.resolve(__dirname, './src/containers'),
+                "@customHooks": path.resolve(__dirname, './src/customHooks')
+            },
+            modules: [
+                path.resolve('src'),
+                path.resolve('node_modules')
+            ]
         },
         output: {
             path: path.resolve(__dirname, "./dist"),

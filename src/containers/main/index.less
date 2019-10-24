@@ -1,0 +1,10 @@
+@import "~index.less";
+/* 导入src目录下的index.less，使用定义的less变量*/
+
+.RCMind-Main {
+    width: 100vw;
+    height: calc(100vh - @navHeight);
+    margin-top: @navHeight;
+    overflow: auto;
+    transition: background @animateDuration;
+}

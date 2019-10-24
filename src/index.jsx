@@ -1,16 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Provider from '@context';
+import React, { useContext, useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import './index.less'
+import Provider from '@context'
+import Nav from '@containers/nav'
+import Main from '@containers/main'
 
-function App(props) {
+const App = (props) => {
+
     return (
         <Provider>
-            <div className="MindMapApp"></div>
+            <Nav />
+            <Main />
         </Provider>
     )
 }
-
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

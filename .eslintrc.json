@@ -20,8 +20,7 @@
     "plugins": [
         "react-hooks"
     ],
-    "rules": {
-        "no-extra-semi": "error",
+    "rules": {        
         "no-var": "error",
         "prefer-const": [
             "error",
@@ -32,6 +31,7 @@
         ],
         "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则
         "react-hooks/exhaustive-deps": "warn" ,// 检查 effect 的依赖
-        "no-unused-vars":"off" // 检查定义却未使用的局部变量
+        "no-unused-vars":"off", // 检查定义却未使用的局部变量
+        "no-extra-semi": "error"
     }
 }
