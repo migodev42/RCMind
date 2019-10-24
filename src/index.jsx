@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Provider from '@context';
-
+import './index.less'
 
 function App(props) {
     return (
         <Provider>
-            <div>App</div>
+            <div className="MindMapApp"></div>
         </Provider>
     )
 }

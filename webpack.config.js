@@ -27,7 +27,7 @@ module.exports = function (webpackEnv) {
     const getSourceMap = isProduction ? 'cheap-source-map' : 'cheap-module-eval-source-map';
     const useCompress = isProduction ? true : false;
     const entry = {
-        index: path.resolve(__dirname, "./src/index.js"),                            // 每个entry中包含 @babel/poolyfill 以支持ES最新语法
+        index: path.resolve(__dirname, "./src/index.jsx"),                            // 每个entry中包含 @babel/poolyfill 以支持ES最新语法
         // index2: "./src/indexTestMultyEntry.js",
     }
 
@@ -132,7 +132,7 @@ module.exports = function (webpackEnv) {
             extensions: ["*", ".js", ".jsx"],
             alias: {
                 "@src": path.resolve(__dirname, './src'),
-                "@pages": path.resolve(__dirname, './src/context'),
+                "@context": path.resolve(__dirname, './src/context'),
                 "@assets": path.resolve(__dirname, './src/assets'),
                 "@components": path.resolve(__dirname, './src/components'),
                 "@routers": path.resolve(__dirname, './src/routers')
