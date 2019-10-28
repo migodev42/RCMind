@@ -133,7 +133,7 @@ module.exports = function (webpackEnv) {
             alias: {
                 "@src": path.resolve(__dirname, './src'),
                 "@context": path.resolve(__dirname, './src/context'),
-                // "@assets": path.resolve(__dirname, './src/assets'),
+                "@assets": path.resolve(__dirname, './src/assets'),
                 "@components": path.resolve(__dirname, './src/components'),
                 // "@routers": path.resolve(__dirname, './src/routers'),
                 "@containers": path.resolve(__dirname, './src/containers'),

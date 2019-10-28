@@ -15,6 +15,12 @@ export default {
             showChildren: true,
             children: []
         },
+        {
+            id: 'child3',
+            text: '子结点3',
+            showChildren: true,
+            children: []
+        },
 
     ]
 }

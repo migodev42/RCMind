@@ -1,13 +1,20 @@
 const drawNode=(ctx,startPos)=>{
+    const block={
+        height:70,
+        width:160,
+    }
     ctx.beginPath();
-    ctx.moveTo(startPos.x, startPos.y);
-    // 75 25
-    ctx.quadraticCurveTo(25,25,25,45);
-    ctx.quadraticCurveTo(25,65,75,65);
-    // ctx.quadraticCurveTo(50,120,30,125);
-    // ctx.quadraticCurveTo(60,120,65,100);
-    ctx.quadraticCurveTo(125,65,125,45);
-    ctx.quadraticCurveTo(125,25,startPos.x,startPos.y);
+    
+    /* 起点：中上 */
+    ctx.moveTo(startPos.x, startPos.y);    
+    /* 左中 */
+    ctx.quadraticCurveTo(startPos.x-block.width/2,startPos.y,startPos.x-block.width/2,startPos.y+block.height/2);
+    /* 中下 */
+    ctx.quadraticCurveTo(startPos.x-block.width/2,startPos.y+block.height,startPos.x,startPos.y+block.height);
+    /* 右中 */
+    ctx.quadraticCurveTo(startPos.x+block.width/2,startPos.y+block.height,startPos.x+block.width/2,startPos.y+block.height/2);
+    /* 回到起点 */
+    ctx.quadraticCurveTo(startPos.x+block.width/2,startPos.y,startPos.x,startPos.y);
     ctx.stroke();
 }
 
