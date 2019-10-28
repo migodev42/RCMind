@@ -137,7 +137,9 @@ module.exports = function (webpackEnv) {
                 "@components": path.resolve(__dirname, './src/components'),
                 // "@routers": path.resolve(__dirname, './src/routers'),
                 "@containers": path.resolve(__dirname, './src/containers'),
-                "@customHooks": path.resolve(__dirname, './src/customHooks')
+                "@customHooks": path.resolve(__dirname, './src/customHooks'),
+                "@utils": path.resolve(__dirname, './utils'),
+
             },
             modules: [
                 path.resolve('src'),
