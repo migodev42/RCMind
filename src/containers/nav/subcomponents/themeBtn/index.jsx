@@ -13,7 +13,7 @@ import useTheme from '@customHooks/useTheme'
 export default function ThemeButton(props) {
     const [open, setOpen] = React.useState(false);
     const [theme, setTheme] = React.useState(false);
-    
+
     const { setBgColor } = useTheme()
     const handleClickOpen = () => {
         setOpen(true);
@@ -28,6 +28,7 @@ export default function ThemeButton(props) {
     }
 
     const handleSelectTheme = (e) => {
+        setTheme(e.target.value)
         setBgColor(e.target.value)
     }
 
@@ -47,6 +48,7 @@ export default function ThemeButton(props) {
                     <DialogContentText>
                         Choose a theme you like !
                     </DialogContentText>
+                    background 
                     <Select
                         value={theme}
                         onChange={handleSelectTheme}
@@ -54,18 +56,15 @@ export default function ThemeButton(props) {
                             name: 'max-width',
                             id: 'max-width',
                         }}
-                    >
-                        <MenuItem value="navy">navy</MenuItem>
+                    >                        
                         <MenuItem value="white">white</MenuItem>
+                        <MenuItem value="navy">navy</MenuItem>
                         <MenuItem value="red">red</MenuItem>
                         <MenuItem value="yellow">yellow</MenuItem>
                     </Select>
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary">
-                        Cancel
-                    </Button>
-                    <Button onClick={handleOk} color="primary">
                         Ok
                     </Button>
                 </DialogActions>
